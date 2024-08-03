@@ -43,6 +43,20 @@ body{
     background: var(--bg);
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
 .header{
     background: var(--bg);
     display: flex;
@@ -124,7 +138,7 @@ body{
 .header .cart-items-cntainer{
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
     background: #fff;
@@ -153,6 +167,7 @@ body{
 }
 
 .header .cart-items-cntainer .cart-item img{
+    aspect-ratio: 9/6; /*for all img same size */
     height: 7rem;
 }
 
@@ -165,6 +180,76 @@ body{
 .header .cart-items-cntainer .cart-item .content .price{
     font-size: 1.5rem;
     color: var(--main-color);
-    /* padding-bottom: .5rem; */
+}
 
+.header .cart-items-cntainer .btn{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media(max-width:991px){
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 33rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar a{
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 2rem;
+  }
 }
