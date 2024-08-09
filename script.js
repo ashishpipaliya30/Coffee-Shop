@@ -6,6 +6,14 @@ document.querySelector('#menu-btn').onclick = () =>{
     cartItem.classList.remove('active');
     searchForm.classList.remove('active');
 }
+// For click 3 line cart-item button and get opetions
+let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    navbar.classList.remove('active');
+    cartItem.classList.remove('active');
+}
 
 // For click 3 line cart-item button and get opetions
 let cartItem = document.querySelector('.cart-items-cntainer');
@@ -16,17 +24,8 @@ document.querySelector('#cart-btn').onclick = () =>{
     searchForm.classList.remove('active');
 }
 
-// For click 3 line cart-item button and get opetions
-let searchForm = document.querySelector('.search-form');
-
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active');
-    navbar.classList.remove('active');
-    cartItem.classList.remove('active');
-}
-
 window.onscroll = () =>{
     navbar.classList.remove('active');
-    cartItem.classList.remove('active');
     searchForm.classList.remove('active');
+    cartItem.classList.remove('active');
 }
